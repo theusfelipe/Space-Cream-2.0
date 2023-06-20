@@ -15,6 +15,7 @@ body {
     font-family: 'Palanquin', sans-serif;
     background: #EFF1FF;
     font-size: 1.6rem;
+    height: 100vh;
 }
 
 
@@ -67,18 +68,24 @@ main {
     text-align: center;
     font-weight: normal;
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     color: #23053A;
-    margin-bottom: 6.3rem;
+    margin-bottom: 1rem;
     
-    width: 31.5rem;
+   /* min-width: 31.5rem;*/
+}
+
+.intro-desktop {
+    display: none;
 }
 
 .cards {
     display: grid;
+    gap: 3.2rem;
+    margin-top: 5rem;
 }
 
-.cards  .card {
+.cards .card {
     position: relative;
     margin-bottom: 3.2rem;
     width: 32rem;
@@ -102,4 +109,105 @@ main {
     top: 16px;
     right: 16px;
     text-align: center;
+}
+
+
+@media(min-width: 900px) {
+
+
+    .container {
+        display: flex;   
+    }
+
+    header {
+        width: 37.7rem;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-bottom: 3.2rem;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .intro-desktop {
+        display: block;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        width: 28rem;
+        text-align: center;
+    }
+
+    .cards {
+        margin-left: 37.7rem;
+        grid-template-areas: 
+        'A B'
+        'C B'
+        'C D'
+        'E F'
+        ;
+    }
+    .cards .card:nth-child(1){
+        grid-area: A;
+    }
+
+    .cards .card:nth-child(2){
+        grid-area: B;
+    }
+
+    .cards .card:nth-child(3){
+        grid-area: D;
+    }
+
+    .cards .card:nth-child(4){
+        grid-area: C;
+    }
+
+    .cards .card:nth-child(5){
+        grid-area: E;
+    }
+    .cards .card:nth-child(6){
+        grid-area: F;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .cards {
+        grid-template-areas: 
+        'A B C'
+        'D B E'
+        'D F E';
+    }
+
+    .cards .card:nth-child(1){
+        grid-area: A;
+    }
+
+    .cards .card:nth-child(2){
+        grid-area: B;
+    }
+
+    .cards .card:nth-child(3){
+        grid-area: C;
+    }
+
+    .cards .card:nth-child(4){
+        grid-area: D;
+    }
+
+    .cards .card:nth-child(5){
+        grid-area: F;
+    }
+    .cards .card:nth-child(6){
+        grid-area: E;
+    }
+
+    
 }
