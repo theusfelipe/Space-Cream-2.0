@@ -42,8 +42,12 @@ header {
 }
 
 
-#logo {
+#logo-mobile {
     padding: 3.2rem 0;
+}
+
+#logo-desktop {
+    display: none;
 }
 
 
@@ -117,6 +121,7 @@ main {
 
     .container {
         display: flex;   
+        
     }
 
     header {
@@ -175,6 +180,31 @@ main {
     .cards .card:nth-child(6){
         grid-area: F;
     }
+
+
+    #logo-mobile {
+        display: none;
+    }
+
+    #logo-desktop {
+        display: block;
+        padding: 3.2rem 0;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: #4A4E69;
+        text-align: center;
+    }
+    
+    footer p a {
+        font-weight: 700;
+        text-decoration: none;
+        color: #4A4E69;
+    }
+    
 }
 
 
