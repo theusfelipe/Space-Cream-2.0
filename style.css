@@ -87,6 +87,7 @@ main {
     display: grid;
     gap: 3.2rem;
     margin-top: 5rem;
+    padding-left: 4.4rem;
 }
 
 .cards .card {
@@ -114,6 +115,9 @@ main {
     right: 16px;
     text-align: center;
 }
+
+
+
 
 
 @media(min-width: 900px) {
@@ -147,6 +151,7 @@ main {
         line-height: 1.5rem;
         width: 28rem;
         text-align: center;
+        
     }
 
     .cards {
@@ -211,6 +216,9 @@ main {
         color: #4A4E69;
     }
     
+    .cards {
+        padding-left: 15rem;
+    }
 }
 
 
