@@ -64,7 +64,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.8rem 3.2rem 6rem;
+    padding: 1.8rem 2.5rem 6rem;
 }
 
 .text {
@@ -234,6 +234,7 @@ footer p a {
         font-weight: 400;
         color: #4A4E69;
         text-align: center;
+        padding-left: 15rem;
     }
     
     footer p a {
