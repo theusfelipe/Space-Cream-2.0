@@ -50,6 +50,10 @@ header {
     display: none;
 }
 
+footer {
+    display: none;
+}
+
 
 .title {
     background: #CBC0D3;
@@ -225,6 +229,7 @@ footer p a {
         padding: 2rem;
         margin-left: 37.7rem;
         text-align: center;
+        display: block;
     }
 
 
