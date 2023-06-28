@@ -87,8 +87,6 @@ main {
     display: none;
 }
 
-
-
 .cards {
     display: grid;
     gap: 3.2rem;
@@ -100,7 +98,22 @@ main {
     position: relative;
     margin-bottom: 3.2rem;
     width: 32rem;
+    overflow: hidden;
+    border-radius: 2rem;
 }
+
+
+.card img {
+    transition: 400ms all;
+    
+}
+
+.card img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 2rem;
+}
+
 
 .cards .card span {
     font-family: 'Staatliches', cursive;
@@ -120,6 +133,7 @@ main {
     top: 16px;
     right: 16px;
     text-align: center;
+    z-index: 10;
 }
 
 
