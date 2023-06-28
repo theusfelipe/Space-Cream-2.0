@@ -87,6 +87,8 @@ main {
     display: none;
 }
 
+
+
 .cards {
     display: grid;
     gap: 3.2rem;
@@ -164,6 +166,11 @@ footer p a {
         position: fixed;
         display: flex;
         flex-direction: column;
+    }
+
+    .cards {
+        margin-top: 6.4rem;
+        padding-left: 18rem;
     }
 
     .title {
@@ -251,9 +258,9 @@ footer p a {
         
     }
     
-    .cards {
-        padding-left: 15rem;
-    }
+
+
+    
 }
 
 
