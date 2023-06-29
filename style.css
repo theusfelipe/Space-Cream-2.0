@@ -103,6 +103,12 @@ main {
 }
 
 
+.card {
+    animation: FadeInTop 700ms 175ms backwards;
+}
+
+
+
 .card img {
     transition: 400ms all;
     
@@ -163,15 +169,53 @@ footer p a {
     
 }
 
+.cards .card:nth-child(1){
+    animation-delay: 200ms;
+}
+
+.cards .card:nth-child(2){
+    animation-delay: 300ms;
+}
+
+.cards .card:nth-child(3){
+    animation-delay: 400ms;
+}
+
+.cards .card:nth-child(4){
+    animation-delay: 500ms;
+}
+
+.cards .card:nth-child(5){
+    animation-delay: 600ms;
+}
+.cards .card:nth-child(6){
+    animation-delay: 700ms;
+}
+
+
+
 @keyframes FadeInTop {
-    0% {
+    from {
         opacity: 0;
-        transform: translatey(1.5);
+        transform: translatey(2rem);
     }
 
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@keyframes SlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-38rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
