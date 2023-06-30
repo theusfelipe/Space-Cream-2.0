@@ -91,7 +91,7 @@ main {
     display: grid;
     gap: 3.2rem;
     margin-top: 5rem;
-    padding-left: 4.4rem;
+    padding-left: 3.6rem;
 }
 
 .cards .card {
@@ -263,7 +263,7 @@ footer p a {
 
     .cards {
         margin-top: 6.4rem;
-        padding-left: 1rem;
+        padding-left: 18rem;
     }
 
     .title {
